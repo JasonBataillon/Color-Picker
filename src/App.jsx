@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-const [selectedColor, setSelectedColor] = useState('');
-
 const Color = ({ color, setSelectedColor }) => {
   return <div className={color} onClick={() => setSelectedColor(color)}></div>;
 };
 const App = () => {
+  const [selectedColor, setSelectedColor] = useState('');
   return (
     <div id="container">
       <div id="navbar">
